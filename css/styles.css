@@ -20,8 +20,21 @@
 p,
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 ul,
@@ -40,20 +53,14 @@ body {
   font-size: 14px;
 }
 
-/*``````в BODY клас щоб було посередині (потім зняти)``````*/
-
-/*.body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}*/
-
 /* -------------for ul without points------------ */
 
 .list {
   list-style: none;
+}
+
+.header-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .container {
@@ -72,16 +79,8 @@ body {
 .display-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-.header-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -91,33 +90,38 @@ body {
   line-height: 1.19;
 }
 
+.logo-margin {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  width: 145px;
+}
+
 .logo-blue {
   color: var(--logo-bgr-blue);
 }
 
-.margin-nav {
-  margin-left: 93px;
+.marg-list-nav {
+  margin-right: 331px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
 }
 
 /*--------------for <li> in HEADER------------*/
 
-.marg-li-header:not(:last-child) {
+.marg-li-header {
   margin-right: 50px;
 }
 
-.marg-li-header:nth-child(2n) {
-  margin-right: 51px;
-}
-
 .head-li-addr:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 /* -------------for <a> in HEADER-------------*/
-.wight-link {
-  display: flex;
-  align-items: center;
-}
+
 .link-header {
   color: var(--main-text-color);
   text-decoration: none;
@@ -125,6 +129,9 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--text-hover-wight);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-header:hover,
@@ -138,15 +145,17 @@ body {
 
 /*-------------for address <a> in HEADER----------------*/
 
-.addr-head {
+.link-addr-head {
   color: var(--content-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
-.addr-head:hover,
-.addr-head:focus {
+.link-addr-head:hover,
+.link-addr-head:focus {
   color: var(--logo-bgr-blue);
 }
 
@@ -186,6 +195,9 @@ body {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .hiro-btn:hover,
@@ -196,7 +208,7 @@ body {
 /*___________________Sectio Features___________________*/
 
 .fiatures {
-  width: 1170px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -218,11 +230,15 @@ body {
   margin: -1px;
 }
 
-.list-fiatures {
+.display-ul {
+  display: flex;
+}
+
+.item-fiatures {
   width: 270px;
 }
 
-.list-fiatures:not(:last-child) {
+.item-fiatures:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -230,6 +246,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .features-text {
@@ -246,26 +263,31 @@ body {
   margin-bottom: 50px;
 }
 
-.disp-for-img {
-  display: block;
+.item-what-do:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*_________________Section Team________________________*/
+
+.item-team:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-team {
+  border-radius: 0 0 4px 4px;
+}
 
 .team-bgr {
   background-color: var(--bgr-team);
   padding-top: 94px;
 }
-.padd-il-team {
-  padding-bottom: 30px;
-}
+
 .names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .profession {
@@ -275,15 +297,20 @@ body {
   text-align: center;
 }
 
+.team-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .mrg-for-h-two {
   margin-bottom: 50px;
 }
+
 /*_________________FOOTER_________________________________*/
 
 .padding-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  /*padding-left: 215px;*/
 }
 
 .address {
@@ -305,7 +332,7 @@ body {
 
 .margin-logo-foot {
   display: block;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .link-footer {
@@ -340,10 +367,14 @@ body {
   padding-top: 94px;
 }
 
-.padding-btn-portf {
-  padding-left: 200px;
-  padding-right: 200px;
+.item-filters:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn-portfolio {
+  display: flex;
   padding-bottom: 50px;
+  justify-content: center;
 }
 
 .btn-font {
@@ -357,6 +388,8 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .btn-font:hover,
