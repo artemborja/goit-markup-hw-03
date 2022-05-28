@@ -42,11 +42,11 @@ body {
 
 /*``````в BODY клас щоб було посередині (потім зняти)``````*/
 
-.body {
+/*.body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+}*/
 
 /* -------------for ul without points------------ */
 
@@ -60,6 +60,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 
 /*____________________HEADER_________________________*/
