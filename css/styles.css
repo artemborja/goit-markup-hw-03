@@ -59,10 +59,6 @@ body {
   list-style: none;
 }
 
-.header-list {
-  display: flex;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -94,15 +90,10 @@ body {
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
-  width: 145px;
 }
 
 .logo-blue {
   color: var(--logo-bgr-blue);
-}
-
-.marg-list-nav {
-  margin-right: 331px;
 }
 
 .navigation {
@@ -111,6 +102,11 @@ body {
 }
 
 /*--------------for <li> in HEADER------------*/
+
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .marg-li-header {
   margin-right: 50px;
@@ -208,9 +204,9 @@ body {
 /*___________________Sectio Features___________________*/
 
 .fiatures {
-  width: 1200px;
+  /*width: 1200px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
   padding-top: 94px;
 }
 
@@ -246,7 +242,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -275,6 +271,7 @@ body {
 
 .item-team {
   border-radius: 0 0 4px 4px;
+  background-color: var(--text-hover-wight);
 }
 
 .team-bgr {
@@ -287,7 +284,7 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -321,6 +318,10 @@ body {
   flex-direction: column;
 }
 
+.item-footer:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .logo-footer {
   font-family: Raleway;
   font-weight: 700;
@@ -332,7 +333,7 @@ body {
 
 .margin-logo-foot {
   display: block;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .link-footer {
@@ -373,12 +374,11 @@ body {
 
 .btn-portfolio {
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
 .btn-font {
-  font-style: normal;
   font-family: inherit;
   font-weight: 500;
   color: var(--main-text-color);
@@ -409,6 +409,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .desc-font {
@@ -432,4 +433,5 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
