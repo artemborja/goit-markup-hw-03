@@ -10,10 +10,12 @@
   --bgr-team: #f5f4fa;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  font-family: "Roboto", "Raleway", sens-serif;
+  color: var(--main-text-color);
+  letter-spacing: 0.03em;
+  background-color: var(--text-hover-wight);
+  font-size: 14px;
 }
 
 p,
@@ -43,14 +45,6 @@ ol {
 }
 
 /*~~~~~~~~~~~~~~~~~~~FIRST PAGE~~~~~~~~~~~~~~~~~~~~*/
-
-body {
-  font-family: "Roboto", "Raleway", sens-serif;
-  color: var(--main-text-color);
-  letter-spacing: 0.03em;
-  background-color: var(--text-hover-wight);
-  font-size: 14px;
-}
 
 /* -------------for ul without points------------ */
 
